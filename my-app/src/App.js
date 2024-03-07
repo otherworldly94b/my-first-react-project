@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import FunctionalGreetingWithProps from './components/FunctionalGreetingWithProps';
+import css from "./App.css";
+import NavBarSimple from "./components/NavBarSimple";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <div className="App">
-      <FunctionalGreetingWithProps greeting="nice to meet you!" name="Andreas"age="29" />
+    <div className={css.App}>
+      {/* Add your components here */}
+      <NavBarSimple />
+      <Sidebar />
     </div>
   );
 }
